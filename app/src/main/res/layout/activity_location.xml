@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".location"
+    android:background="#87202e"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/ic_anhnen_location"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="7dp"
+            android:text="You're almost there!"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="To check in somewhere, you need to share your location." />
+
+        <Button
+            android:id="@+id/bt_allow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_button1_location"
+            android:minHeight="0dp"
+            android:text="Allow"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bt_notnow"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_button2_location"
+            android:minHeight="0px"
+            android:text="Not now"
+            android:textColor="#FF4081"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

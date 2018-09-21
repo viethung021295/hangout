@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="81.5dp"
+        android:background="#ed3851">
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="23dp"
+            android:background="@drawable/home_gach" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_lesthang"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            />
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/home_search"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:text="Me"
+                android:textColor="@color/colorH"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@drawable/ic_vien_home"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true">
+
+            </TextView>
+        </RelativeLayout>
+        <Button
+            android:layout_weight="1"
+            android:text="my friend"
+            android:textColor="@color/myfriend"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="You don't have any check-ins. Let's add a new one." />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="270dp"
+            android:background="@drawable/home_add"
+            android:padding="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
